@@ -19,7 +19,7 @@ export default function Home() {
           <Header.Title>Chat Ninja</Header.Title>
         </Header.Root>
 
-        <div className="my-5">
+        <div className="my-5 overflow-y-auto h-full max-h-[650px] p-4">
           {messages.length === 0 && <WelcomeChat />}
 
           {messages.map((message) => (
